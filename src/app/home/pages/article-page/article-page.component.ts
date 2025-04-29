@@ -16,7 +16,7 @@ export class ArticlePageComponent  implements OnInit {
 
   constructor(
     // private route: ActivatedRoute
-    ) { 
+    ) {
 
     this.route.params.subscribe( (params: any) => {
       console.log('params en article -> ', params);
@@ -34,7 +34,7 @@ export class ArticlePageComponent  implements OnInit {
 
   }
 
-  ngOnInit() {}
+
 
   async loadArticle(id: string) {
     const url = 'https://jsonplaceholder.typicode.com';
